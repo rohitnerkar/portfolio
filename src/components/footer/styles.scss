@@ -1,0 +1,123 @@
+.footer {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: #f8f8f8;
+  
+    &__container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+        &__footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #4a5568;
+            padding-bottom: 2rem;
+            
+            gap: 20rem; 
+            flex: 1;
+            text-align: center;
+  
+            &__social-icons {
+                display: flex;
+                gap: 1rem;
+
+                p {
+                    font-size: 2rem;
+                }
+  
+                svg {
+                    cursor: pointer;
+                    transition: transform 0.2s;
+  
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            &__contact {
+                p {
+                    margin: 0.5rem 0;
+                    font-size: 2rem;
+                    color: #4a5568;
+                }   
+            }
+        }
+        &__footer-text {
+            padding-top: 2rem;
+            text-align: center;
+
+            p {
+                margin: 0.5rem 0;
+                font-size: 2rem;
+                color: #4a5568;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__container {
+            &__footer-content {
+                flex-direction: column; /* Stack items vertically */
+                gap: 2rem; /* Reduce gap between items */
+            }
+
+            &__footer-text {
+                padding-top: 1rem;
+
+                p {
+                    font-size: 1.5rem; /* Reduce font size */
+                }
+            }
+
+            &__footer-content &__social-icons p {
+                font-size: 1.5rem; /* Reduce font size for social icons */
+            }
+
+            &__footer-content &__contact p {
+                font-size: 1.5rem; /* Reduce font size for contact text */
+            }
+        }
+    }
+}
+
+  // Media Query for Very Small Screens (up to 480px)
+@media (max-width: 480px) {
+    .footer {
+        &__container {
+            padding: 0 0.5rem; /* Adjust container padding */
+
+            &__footer-content {
+                gap: 1rem; /* Further reduce gap between items */
+
+                &__social-icons {
+                    gap: 0.5rem; /* Reduce gap between icons */
+
+                    svg {
+                        width: 20px; /* Reduce icon size */
+                        height: 20px; /* Reduce icon size */
+                    }
+                }
+
+                &__contact p,
+                &__footer-text p {
+                    font-size: 1.2rem; /* Further reduce font size */
+                }
+            }
+
+            &__footer-text {
+                padding-top: 0.5rem; /* Reduce padding for footer text */
+            }
+        }
+    }
+}
