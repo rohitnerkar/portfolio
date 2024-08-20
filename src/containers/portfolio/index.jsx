@@ -60,7 +60,7 @@ const Portfolio = () => {
               >
                 <div className="portfolio__content__cards__item__image-wrapper">
                 <p>{item.name}</p>
-                  <a>
+                  <a href="">
                     <img alt={item.name} src={item.image} />
                   </a>
                 </div>
