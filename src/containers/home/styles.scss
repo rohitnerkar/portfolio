@@ -82,6 +82,10 @@
     .home__social h1{
         font-size: 1.5rem;
     }
+
+    .home__contact-me button {
+        gap: 5px;
+    }
 }
 
 @media only screen and (min-width : 551px) and (max-width : 768px) {
@@ -93,6 +97,10 @@
     .home__social h1{
         font-size: 1.5rem;
     }
+
+    .home__contact-me button {
+        gap: 5px;
+    }
 }
 
 @media only screen and (min-width : 769px) and (max-width : 990px) {
@@ -103,6 +111,10 @@
 
     .home__social h1{
         font-size: 1.5rem;
+    }
+
+    .home__contact-me button {
+        gap: 5px;
     }
 }
 
